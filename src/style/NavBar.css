@@ -1,0 +1,15 @@
+.navbar {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    height: 8vh;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: calc(2px + 2vmin);
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+}
