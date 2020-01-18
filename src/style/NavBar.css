@@ -1,15 +1,34 @@
 .navbar {
-    overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    height: 8vh;
+    height: 10vh;
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    font-size: calc(2px + 2vmin);
+    color: white;
+    font-size: calc(4px + 2vmin);
+    font-family: 'Red Hat Display', sans-serif;
+    overflow: hidden;
+    position: fixed;
     width: 100%;
-    background-color: black;
-    opacity: 0.3;
+}
+.linkStyle {
+    text-decoration: none;
+    color: white;
+    transition: 0.5s;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .4s ease-in-out;
+}
+
+/* 
+Using transition, transform and the 'on hover' hook on 
+the NavBar, I adjust it size.    
+*/
+
+.linkStyleHover {
+    text-decoration: none;
+    cursor: default;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.2);
 }
