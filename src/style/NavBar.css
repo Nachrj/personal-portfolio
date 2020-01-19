@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-around;
     color: white;
-    font-size: calc(4px + 2vmin);
+    font-size: calc(3px + 2vmin);
     font-family: 'Red Hat Display', sans-serif;
     overflow: hidden;
     position: fixed;
@@ -30,5 +30,5 @@ the NavBar, I adjust it size.
     font-family: 'Montserrat', sans-serif;
     color: white;
     transition: 0.3s;
-    transform: scale(1.2);
+    transform: scale(1.1);
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const ContactPage = () => {
+const ContactScreen = () => {
     return(
         <div>
             
@@ -8,4 +8,4 @@ const ContactPage = () => {
     )
 }
 
-export default ContactPage
+export default ContactScreen
