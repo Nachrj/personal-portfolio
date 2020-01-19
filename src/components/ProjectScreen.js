@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const ProjectScreen = () => {
-    return(
-        <div>
-            
-        </div>
-    )
-}
+  return <div>pRoYeCtO</div>;
+};
 
-export default ProjectScreen
+export default ProjectScreen;

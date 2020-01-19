@@ -1,12 +1,12 @@
-import React from 'react'
-import '../style/HomeScreen.css'
+import React from 'react';
+import '../style/HomeScreen.css';
 
 const HomeScreen = () => {
-    return (
-        <div>
-            <h1>Ignacio Rodriguez Justo</h1>
-        </div>
-    )
-}
+  return (
+    <div>
+      <h1>Esta es la hOmE</h1>
+    </div>
+  );
+};
 
-export default HomeScreen
+export default HomeScreen;

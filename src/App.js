@@ -5,7 +5,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link,
 } from 'react-router-dom';
 import HomeScreen from './components/HomeScreen.js';
 import AboutScreen from './components/AboutScreen.js';
@@ -19,21 +18,23 @@ import ContactScreen from './components/ContactScreen.js';
 const App = () => {
   return (
     <Router>
-      {/* <NavBar /> */}
-      <Switch>
-        <Route exact path='/about'>
-          <AboutScreen />
-        </Route>
-        <Route exact path='/projects'>
-          <ProjectScreen />
-        </Route>
-        <Route exact path='/contact'>
-          <ContactScreen />
-        </Route>
-        <Route exact path='/'>
-          <HomeScreen />
-        </Route>
-      </Switch>
+      <NavBar />
+      <div className="main-view">
+        <Switch className="main-view">
+          <Route exact path="/about">
+            <AboutScreen />
+          </Route>
+          <Route exact path="/projects">
+            <ProjectScreen />
+          </Route>
+          <Route exact path="/contact">
+            <ContactScreen />
+          </Route>
+          <Route exact path="/">
+            <HomeScreen />
+          </Route>
+        </Switch>
+      </div>
     </Router>
   );
 }
