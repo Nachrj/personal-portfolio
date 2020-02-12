@@ -1,7 +1,9 @@
 import React from 'react';
 
 const AboutScreen = () => {
-  return <div>Soy el aBoUt</div>;
+  return (
+    <div>About screen</div>
+    );
 };
 
 export default AboutScreen;

@@ -1,15 +1,15 @@
 import React from 'react';
-import NavBar from './components/NavBar.js';
+import NavBar from './screens/NavBar.js';
 import './style/App.css';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom';
-import HomeScreen from './components/HomeScreen.js';
-import AboutScreen from './components/AboutScreen.js';
-import ProjectScreen from './components/ProjectScreen.js';
-import ContactScreen from './components/ContactScreen.js';
+import HomeScreen from './screens/HomeScreen.js';
+import AboutScreen from './screens/AboutScreen.js';
+import ProjectScreen from './screens/ProjectScreen.js';
+import ContactScreen from './screens/ContactScreen.js';
 
 // Use React Router to move between screens. 
 // The 'linking' happens inside the Switch component
@@ -24,7 +24,7 @@ const App = () => {
           <Route exact path="/about">
             <AboutScreen />
           </Route>
-          <Route exact path="/projects">
+          <Route exact path="/portfolio">
             <ProjectScreen />
           </Route>
           <Route exact path="/contact">

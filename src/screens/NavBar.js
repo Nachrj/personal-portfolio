@@ -20,7 +20,7 @@ const NavBar = () => {
         About
       </Link>
       <Link to="/projects" ref={hoverRef2} className={isHovered2 ? 'linkStyleHover' : 'linkStyle'}>
-        Projects
+        Portfolio
       </Link>
       <Link to="/contact" ref={hoverRef3} className={isHovered3 ? 'linkStyleHover' : 'linkStyle'}>
         Contact

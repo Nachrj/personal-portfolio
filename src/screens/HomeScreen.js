@@ -3,8 +3,9 @@ import '../style/HomeScreen.css';
 
 const HomeScreen = () => {
   return (
-    <div>
-      <h1>Esta es la hOmE</h1>
+    <div className='homeScreenStyle'>
+      <h1>Ignacio Rodriguez Justo</h1>
+      <a>Front-End Developer</a>
     </div>
   );
 };

@@ -32,7 +32,13 @@ the NavBar, I adjust it size.
     text-decoration: none;
     cursor: default;
     font-family: 'Montserrat', sans-serif;
-    color: white;
-    transition: 0.3s;
+    background-color: white;
+    padding-top: 0.5%;
+    padding-left: 1.2%;
+    padding-right: 1.2%;
+    padding-bottom: 0.5%;
+    color: black;
+    transition: 0.4s;
     transform: scale(1.1);
+    border-radius: 0.5vh;
 }

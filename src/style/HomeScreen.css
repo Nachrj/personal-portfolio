@@ -1,0 +1,12 @@
+.homeScreenStyle {
+    text-align: center;
+
+}
+
+body {
+    background-image: url(../assets/home_wallpaper.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
