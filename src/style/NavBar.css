@@ -12,7 +12,9 @@
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
+    font-weight: bold;
+    background-color: #50C8DC;
+    z-index: 2;
 }
 
 .linkStyle {
@@ -37,7 +39,7 @@ the NavBar, I adjust it size.
     padding-left: 1.2%;
     padding-right: 1.2%;
     padding-bottom: 0.5%;
-    color: black;
+    color: #327A8B;
     transition: 0.4s;
     transform: scale(1.1);
     border-radius: 0.5vh;

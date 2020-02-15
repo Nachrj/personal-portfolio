@@ -1,6 +1,13 @@
 .homeScreenStyle {
     text-align: center;
+}
 
+.diagonalLine {
+    transform: rotate(-45deg);
+}
+
+.titleStyle {
+    margin-top: 10%;
 }
 
 body {
