@@ -16,28 +16,30 @@ import ContactScreen from './screens/ContactScreen.js';
 // First route without path because it's going to be
 // the first screen.
 class App extends React.Component {
-
   render() {
     return (
-      <Router>
-        <NavBar />
-        <div className="main-view">
-          <Switch className="main-view">
-            <Route exact path="/about">
-              <AboutScreen />
-            </Route>
-            <Route exact path="/portfolio">
-              <ProjectScreen />
-            </Route>
-            <Route exact path="/contact">
-              <ContactScreen />
-            </Route>
-            <Route exact path="/">
-              <HomeScreen />
-            </Route>
-          </Switch>
-        </div>
-      </Router>
+      <div>
+        <Router>
+          <NavBar />
+          <div className="main-view">
+            <Switch className="main-view">
+              <Route exact path="/about">
+                <AboutScreen />
+              </Route>
+              <Route exact path="/portfolio">
+                <ProjectScreen />
+              </Route>
+              <Route exact path="/contact">
+                <ContactScreen />
+              </Route>
+              <Route exact path="/">
+                <HomeScreen />
+              </Route>
+            </Switch>
+          </div>
+        </Router>
+      </div>
+      
     );
   }
 }

@@ -1,11 +1,11 @@
 .navbar {
-    height: 10vh;
+    height: 6%;
     align-items: center;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     color: white;
-    font-size: calc(3px + 2vmin);
+    font-size: calc(1em + 1vm);
     font-family: 'Red Hat Display', sans-serif;
     overflow: hidden;
     position: fixed;

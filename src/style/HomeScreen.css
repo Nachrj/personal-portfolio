@@ -1,9 +1,8 @@
 .homeScreenStyle {
     text-align: center;
-}
-
-.diagonalLine {
-    transform: rotate(-45deg);
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
 }
 
 .titleStyle {
