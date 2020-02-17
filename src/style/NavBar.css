@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: space-around;
     color: white;
-    font-size: calc(1em + 1vm);
+    font-size: calc(1em + 1vw);
     font-family: 'Red Hat Display', sans-serif;
     overflow: hidden;
     position: fixed;
