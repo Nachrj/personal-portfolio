@@ -2,6 +2,7 @@ import React from 'react';
 import '../style/HomeScreen.css';
 import Fade from 'react-reveal/Fade';
 import WarpBackground from '../components/WarpBackground.js';
+import NachoLogo from '../assets/NachoLogo.png';
 
 const nameTitle = {
   fontWeight: 'bold',
@@ -21,6 +22,13 @@ const HomeScreen = () => {
       <WarpBackground />
       <div className='titleStyle'>
         <Fade top>
+          <img 
+            src={NachoLogo}
+            height='10%'
+            width='10%'
+            alt='My personal logo' 
+
+            />
           <h1 style={introTitle}>Hello, I'm</h1>
         </Fade>
         <h1 style={nameTitle}>Ignacio Rodriguez Justo</h1>
