@@ -31,7 +31,7 @@ input {
     display: block;
     margin-bottom: 0.5em;
     margin-top: 20px;
-    font-size: calc(0.8em + 1vm);
+    font-size: calc(0.8em + 1vw);
     font-weight: 200;
     color: white;
     display: inline-block;
