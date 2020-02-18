@@ -9,6 +9,18 @@
     margin-top: 5%;
 }
 
+img {
+    height: 8%;
+    width: 8%;
+}
+
+@media (max-width: 812px) {
+    img {
+        height: 4em;
+        width: 4em;
+    }
+}
+
 body {
     background-image: url(../assets/home_wallpaper.jpg) no-repeat center center fixed; 
     -webkit-background-size: cover;

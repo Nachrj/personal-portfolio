@@ -24,8 +24,6 @@ const HomeScreen = () => {
         <Fade top>
           <img 
             src={NachoLogo}
-            height='10%'
-            width='10%'
             alt='My personal logo' 
 
             />
