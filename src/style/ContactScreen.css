@@ -5,88 +5,112 @@
 
 form {
     max-width: 25em;
-    margin: 0 auto
+    margin: 0 auto;
+    margin-bottom: 8vh;
 }
 
-@media (max-width: 420px) {
+@media (max-width: 450px) {
     form {
         max-width: 85%;
     }
 }
 
 input {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid white;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    font-size: 1em;
-  }
-  
-  label {
-    line-height: 2;
-    text-align: left;
-    display: block;
-    margin-bottom: 0.5em;
-    margin-top: 20px;
-    font-size: 0.8em;
-    font-weight: 200;
-    color: white;
-    display: inline-block;
-    position: relative; 
-  }
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
 
-  label::after {
-    background: none repeat scroll 0 0 transparent;
-    bottom: 0;
-    content: '';
-    display: block;
-    height: 2px;
-    left: 50%;
-    position: absolute;
-    background: white;
-    transition: width 0.2s ease 0s, left 0.3s ease 0s;
-    width: 0;  
-  }
+label {
+  line-height: 2;
+  text-align: left;
+  display: block;
+  margin-bottom: 0.5em;
+  margin-top: 20px;
+  font-size: 1em;
+  font-weight: 200;
+  color: white;
+  display: inline-block;
+  position: relative; 
+}
 
-  label:hover:after {
-    width: 100%;
-    left: 0;
-  }
+label::after {
+  background: none repeat scroll 0 0 transparent;
+  bottom: 0;
+  content: '';
+  display: block;
+  height: 2px;
+  left: 50%;
+  position: absolute;
+  background: white;
+  transition: width 0.2s ease 0s, left 0.3s ease 0s;
+  width: 0;  
+}
 
-  button[type="submit"],
-  input[type="submit"] {
-    background-color: #0F0B19;
-    color: #50C8DC;
-    text-transform: uppercase;
-    border: 0.1em solid #50C8DC;
-    margin-top: 1.5em;
-    transition: 0.3s all;
+label:hover:after {
+  width: 100%;
+  left: 0;
+}
 
-  }
-  
-  button[type="submit"]:hover,
-  input[type="submit"]:hover {
-    background: #50C8DC;
-    border: 0.1em solid #50C8DC;
-    color: white;
-    transition: 0.3s all;
-  }
+button[type="submit"],
+input[type="submit"] {
+  background-color: #0F0B19;
+  color: #50C8DC;
+  text-transform: uppercase;
+  border: 0.1em solid #50C8DC;
+  margin-top: 2.5em;
+  transition: 0.3s all;
 
-  textarea {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid white;
-    padding: 10px 15px;
-    margin-bottom: 10px;
-    font-size: 1em;
-  }
+}
+
+button[type="submit"]:hover,
+input[type="submit"]:hover {
+  background: #50C8DC;
+  border: 0.1em solid #50C8DC;
+  color: white;
+  transition: 0.3s all;
+}
+
+textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid white;
+  padding: 10px 15px;
+  margin-bottom: 10px;
+  font-size: 1em;
+}
 
 .formStyle p {
-    color: rgb(177, 28, 28);
-    font-size: 0.9;
+  color: rgb(177, 28, 28);
+  font-size: 0.9;
 }  
+
+.svgButtons {
+  display: flex;
+  justify-content: space-between;
+  max-width: 20em;
+  margin: 0 auto;
+}
+
+@media (max-width: 420px) {
+  .svgButtons {
+      max-width: 80%;
+  }
+}
+
+.svgButtons button {
+  border: none;
+  background: none;
+  transition: all .3s ease-in-out;
+}
+
+.svgButtons button:hover {
+  transform: scale(1.2);
+}

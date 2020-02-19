@@ -10,17 +10,33 @@ import WarpBackground from '../components/WarpBackground';
 import Fade from 'react-reveal/Fade';
 
 const ContactScreen = () => {
+
+  const handleClick = (link) => {
+    let newLink = `https://www.${link}`
+    window.open(newLink)
+  }
+
   return (
     <div className='contactStyle'>
       <WarpBackground />
       <Fade top>
         <h1>Contact</h1>
       </Fade>
-      <div>
-        <ContactForm />
-        <GitHubLogo />
-        <LinkedInLogo />
-        <InstagramLogo />
+      <ContactForm />
+      <div className='svgButtons'>
+
+        <button onClick={() => handleClick('github.com/nachrj')}>
+          <GitHubLogo className='svgStyle' />
+        </button>
+
+        <button onClick={() => handleClick('linkedin.com/in/ignaciorodriguezjusto/')}>
+          <LinkedInLogo className='svgStyle' />
+        </button>
+
+        <button onClick={() => handleClick('instagram.com/nachrj_')}>
+          <InstagramLogo className='svgStyle' />
+        </button>
+
       </div>
     </div>
   );
