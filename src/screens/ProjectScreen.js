@@ -2,7 +2,7 @@ import React from 'react';
 
 const ProjectScreen = () => {
   return (
-    <div>Portfolio screen</div>
+    <div>project/portfolio</div>
   );
 };
 

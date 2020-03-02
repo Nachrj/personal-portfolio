@@ -1,38 +1,42 @@
-import React from 'react';
-import '../style/HomeScreen.css';
-import Fade from 'react-reveal/Fade';
-import WarpBackground from '../components/WarpBackground.js';
-import NachoLogo from '../assets/NachoLogo.png';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+
+import "../style/HomeScreen.css";
+import Fade from "react-reveal/Fade";
+import WarpBackground from "../components/WarpBackground";
+import NachoLogo from "../assets/NachoLogo.png";
+import Button from "../components/Button";
 
 const nameTitle = {
-  fontWeight: 'bold',
-}
+  fontWeight: "bold"
+};
 
 const subTitle = {
-  fontSize: '2.5vh'
-}
+  fontSize: "2.5vh"
+};
 
 const introTitle = {
-  fontSize: '3vh',
-}
+  fontSize: "3vh"
+};
 
 const HomeScreen = () => {
   return (
-    <div className='homeScreenStyle'>
+    <div className="homeScreenStyle">
       <WarpBackground />
-      <div className='titleStyle'>
+      <div className="titleStyle">
         <Fade top>
-          <img 
-            src={NachoLogo}
-            alt='My personal logo' 
-
-            />
+          <img src={NachoLogo} alt="My personal logo" />
           <h1 style={introTitle}>Hello, I'm</h1>
         </Fade>
         <h1 style={nameTitle}>Ignacio Rodriguez Justo</h1>
         <Fade bottom>
           <span style={subTitle}>Mobile and Web Developer</span>
         </Fade>
+        <div className="btnContainer">
+          <Link to="/projects">
+            <Button text="my work" className="homeScreenButton" />
+          </Link>
+        </div>
       </div>
     </div>
   );

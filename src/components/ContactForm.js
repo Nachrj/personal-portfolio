@@ -1,5 +1,6 @@
-import React from 'react'
-import { useForm } from 'react-hook-form'
+import React from 'react';
+import { useForm } from 'react-hook-form';
+import Button from './Button.js';
 
 const ContactForm = () => {
 	const { register, handleSubmit, errors } = useForm();
@@ -9,7 +10,7 @@ const ContactForm = () => {
 	}
 
 	const sendEmail = (name, message) => {
-		let newWindow = window.open(`mailto:rodriguezjustoignacio@gmail.com?subject=${name}&body=${message}`)
+		window.open(`mailto:rodriguezjustoignacio@gmail.com?subject=${name}&body=${message}`)
 	}
 
 	return (
@@ -22,7 +23,18 @@ const ContactForm = () => {
 				/>
 			{errors.name && errors.name.type === 'required' && <p>This field is required</p>}
 			{errors.name && errors.name.type === 'minLength' && <p>This field requires more characters</p>}
+{/*		
+			<label>Email</label>
+			<input 
+				name='email' 
+				type='email' 
+				placeholder='example@domain.com'
+				ref={register({ required: true, minLength: 5 })}
 
+				/>
+			{errors.email && errors.email.type === 'required' && <p>This field is required</p>}
+			{errors.email && errors.email.type === 'minLength' && <p>This field requires more characters</p>} 
+*/}
 			<label>Message</label>
 			<textarea 
 				name='message' 
@@ -35,7 +47,7 @@ const ContactForm = () => {
 			{errors.message && errors.message.type === 'minLength' && <p>This field requires more characters</p>}
 
 
-			<input type='submit'/>
+			<Button type='submit' text='submit' className='submitButton' />
 		</form>
 	)
 }

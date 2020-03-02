@@ -1,9 +1,10 @@
-import React, { useState, useRef} from 'react';
+import React from 'react';
 import '../style/AboutScreen.css'
 
 const AboutScreen = () => {
   return (
     <div className='aboutScreen'>
+      aboutscreen
     </div>
     );
 };
